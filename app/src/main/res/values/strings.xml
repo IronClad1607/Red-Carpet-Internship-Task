@@ -3,4 +3,7 @@
     <string name="news_app">News App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_headlines">Top Headlines</string>
+    <string name="search_anything">Search Anything</string>
+    <string name="various_sources">Various Sources</string>
 </resources>
