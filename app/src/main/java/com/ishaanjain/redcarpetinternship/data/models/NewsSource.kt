@@ -1,6 +1,6 @@
 package com.ishaanjain.redcarpetinternship.data.models
 
-data class Source(
+data class NewsSource(
     val id: String,
     val name: String
 )

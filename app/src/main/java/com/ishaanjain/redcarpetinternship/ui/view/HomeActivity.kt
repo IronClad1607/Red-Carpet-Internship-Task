@@ -17,13 +17,17 @@ class HomeActivity : AppCompatActivity() {
         }
 
         cvSearch.setOnClickListener {
-            val searchIntent = Intent(this, TopHeadlineActivity::class.java)
+            val searchIntent = Intent(this, SearchActivity::class.java)
             startActivity(searchIntent)
         }
 
         cvSources.setOnClickListener {
-            val sourceIntent = Intent(this, TopHeadlineActivity::class.java)
+            val sourceIntent = Intent(this, SourceActivity::class.java)
             startActivity(sourceIntent)
         }
+    }
+
+    override fun onBackPressed() {
+        finishAffinity()
     }
 }

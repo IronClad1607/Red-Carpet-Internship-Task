@@ -1,5 +1,6 @@
 package com.ishaanjain.redcarpetinternship.ui.view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.tabs.TabLayout
@@ -41,6 +42,7 @@ class TopHeadlineActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        finishAffinity()
+        val backIntent = Intent(this, HomeActivity::class.java)
+        startActivity(backIntent)
     }
 }
