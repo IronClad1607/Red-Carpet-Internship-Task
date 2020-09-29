@@ -25,4 +25,10 @@ interface NewAPIService {
 
     @GET("/v2/sources?language=en")
     suspend fun getSources(@Query("apiKey") apiKey: String): Response<SourcesResponse>
+
+    @GET("/v2/everything")
+    suspend fun findNews(
+        @Query("q") keyword: String,
+        @Query("apiKey") apiKey: String
+    ): Response<NewsResponse>
 }

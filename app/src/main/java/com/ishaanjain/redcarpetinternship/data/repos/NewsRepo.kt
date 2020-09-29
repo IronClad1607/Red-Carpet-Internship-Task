@@ -11,4 +11,7 @@ object NewsRepo {
     suspend fun getHeadlineUk(apiKey: String) = RetrofitClient.apiCall.getHeadlinesUk(apiKey)
 
     suspend fun getSources(apiKey: String) = RetrofitClient.apiCall.getSources(apiKey)
+
+    suspend fun findNews(keyword: String, apiKey: String) =
+        RetrofitClient.apiCall.findNews(keyword, apiKey)
 }
