@@ -1,5 +1,6 @@
 package com.ishaanjain.redcarpetinternship.ui.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
@@ -38,5 +39,10 @@ class SourceActivity : AppCompatActivity() {
                 mAdapter.notifyDataSetChanged()
             }
         })
+    }
+
+    override fun onBackPressed() {
+        val backIntent = Intent(this, HomeActivity::class.java)
+        startActivity(backIntent)
     }
 }

@@ -1,8 +1,12 @@
 package com.ishaanjain.redcarpetinternship.ui.adapters
 
+import android.content.ActivityNotFoundException
+import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.ishaanjain.redcarpetinternship.R
 import com.ishaanjain.redcarpetinternship.data.models.Source
@@ -16,6 +20,18 @@ class SourceAdapter(private val listOfSources: List<Source>) :
             with(itemView) {
                 tvName.text = source.name
                 tvDescription.text = source.description
+
+                setOnClickListener {
+                    val siteIntent = Intent()
+                    siteIntent.action = Intent.ACTION_VIEW
+                    siteIntent.data = Uri.parse(source.url)
+
+                    try {
+                        context.startActivity(siteIntent)
+                    } catch (e: ActivityNotFoundException) {
+                        Toast.makeText(context, "Site Invalid", Toast.LENGTH_SHORT).show()
+                    }
+                }
             }
         }
     }
