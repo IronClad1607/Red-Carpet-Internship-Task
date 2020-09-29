@@ -13,6 +13,16 @@ interface NewAPIService {
         @Query("apiKey") apiKey: String
     ): Response<NewsResponse>
 
+    @GET("/v2/top-headlines?country=us")
+    suspend fun getHeadlinesUsa(
+        @Query("apiKey") apiKey: String
+    ): Response<NewsResponse>
+
+    @GET("/v2/top-headlines?country=gb")
+    suspend fun getHeadlinesUk(
+        @Query("apiKey") apiKey: String
+    ): Response<NewsResponse>
+
     @GET("/v2/sources?language=en")
     suspend fun getSources(@Query("apiKey") apiKey: String): Response<SourcesResponse>
 }

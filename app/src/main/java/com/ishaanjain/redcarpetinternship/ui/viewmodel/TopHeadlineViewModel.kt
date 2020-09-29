@@ -28,4 +28,32 @@ class TopHeadlineViewModel : ViewModel() {
             }
         }
     }
+
+    fun fetchUsaHeadline() {
+        viewModelScope.launch(Dispatchers.IO) {
+            val response = withContext(Dispatchers.IO) {
+                NewsRepo.getHeadlineUsa(Constants.apiKey)
+            }
+
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    usaHeadlines.postValue(it.articles)
+                }
+            }
+        }
+    }
+
+    fun fetchUkHeadline() {
+        viewModelScope.launch(Dispatchers.IO) {
+            val response = withContext(Dispatchers.IO) {
+                NewsRepo.getHeadlineUk(Constants.apiKey)
+            }
+
+            if (response.isSuccessful) {
+                response.body()?.let {
+                    ukHeadlines.postValue(it.articles)
+                }
+            }
+        }
+    }
 }
