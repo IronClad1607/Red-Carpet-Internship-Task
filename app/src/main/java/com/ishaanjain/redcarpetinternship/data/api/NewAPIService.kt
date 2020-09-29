@@ -14,6 +14,6 @@ interface NewAPIService {
         @Query("apiKey") apiKey: String
     ): Response<NewsResponse>
 
-    @GET("/v2/sources")
+    @GET("/v2/sources?language=en")
     suspend fun getSources(@Query("apiKey") apiKey: String): Response<SourcesResponse>
 }

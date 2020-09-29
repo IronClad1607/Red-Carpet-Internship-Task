@@ -3,14 +3,15 @@ package com.ishaanjain.redcarpetinternship.ui.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.ishaanjain.redcarpetinternship.data.models.Sources
-import com.ishaanjain.redcarpetinternship.data.models.SourcesResponse
+import com.ishaanjain.redcarpetinternship.data.models.Source
 import com.ishaanjain.redcarpetinternship.data.repos.NewsRepo
 import com.ishaanjain.redcarpetinternship.utils.Constants
-import kotlinx.coroutines.*
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class NewsViewModel : ViewModel() {
-    var sources = MutableLiveData<List<Sources>>()
+    var sources = MutableLiveData<List<Source>>()
 
     fun fetchSources() {
         viewModelScope.launch(Dispatchers.IO) {

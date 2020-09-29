@@ -1,6 +1,6 @@
 package com.ishaanjain.redcarpetinternship.data.models
 
-data class Sources(
+data class Source(
     val category: String,
     val country: String,
     val description: String,
