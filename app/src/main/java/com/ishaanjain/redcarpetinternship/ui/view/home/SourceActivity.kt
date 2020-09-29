@@ -1,8 +1,7 @@
-package com.ishaanjain.redcarpetinternship.ui.view
+package com.ishaanjain.redcarpetinternship.ui.view.home
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,13 +9,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.ishaanjain.redcarpetinternship.R
 import com.ishaanjain.redcarpetinternship.data.models.Source
 import com.ishaanjain.redcarpetinternship.ui.adapters.SourceAdapter
-import com.ishaanjain.redcarpetinternship.ui.viewmodel.NewsViewModel
+import com.ishaanjain.redcarpetinternship.ui.view.HomeActivity
+import com.ishaanjain.redcarpetinternship.ui.viewmodel.SourcesViewModel
 import kotlinx.android.synthetic.main.activity_source.*
 
 class SourceActivity : AppCompatActivity() {
 
     private val vm by lazy {
-        ViewModelProvider(this).get(NewsViewModel::class.java)
+        ViewModelProvider(this).get(SourcesViewModel::class.java)
     }
 
     private val listOfSources = arrayListOf<Source>()

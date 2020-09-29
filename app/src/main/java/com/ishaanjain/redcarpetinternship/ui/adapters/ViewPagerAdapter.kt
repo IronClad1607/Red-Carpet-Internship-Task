@@ -3,9 +3,9 @@ package com.ishaanjain.redcarpetinternship.ui.adapters
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.ishaanjain.redcarpetinternship.ui.view.fragments.IndiaFragment
-import com.ishaanjain.redcarpetinternship.ui.view.fragments.UkFragment
-import com.ishaanjain.redcarpetinternship.ui.view.fragments.UsaFragment
+import com.ishaanjain.redcarpetinternship.ui.view.home.fragments.IndiaFragment
+import com.ishaanjain.redcarpetinternship.ui.view.home.fragments.UkFragment
+import com.ishaanjain.redcarpetinternship.ui.view.home.fragments.UsaFragment
 
 class ViewPagerAdapter(fragmentManager: FragmentManager, private val totalTabs: Int) :
     FragmentPagerAdapter(

@@ -4,6 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ishaanjain.redcarpetinternship.R
+import com.ishaanjain.redcarpetinternship.ui.view.home.SearchActivity
+import com.ishaanjain.redcarpetinternship.ui.view.home.SourceActivity
+import com.ishaanjain.redcarpetinternship.ui.view.home.TopHeadlineActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {

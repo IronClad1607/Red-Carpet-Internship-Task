@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBack"
     android:padding="@dimen/paddingActivity"
-    tools:context=".ui.view.SourceActivity">
+    tools:context=".ui.view.home.SourceActivity">
 
     <TextView
         android:id="@+id/tvHeading"

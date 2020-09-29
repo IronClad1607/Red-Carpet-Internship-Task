@@ -7,16 +7,17 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/news_app"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.view.SourceActivity"></activity>
-        <activity android:name=".ui.view.SearchActivity" />
+        <activity android:name=".ui.view.NewsDetailActivity"></activity>
+        <activity android:name=".ui.view.home.SourceActivity" />
+        <activity android:name=".ui.view.home.SearchActivity" />
         <activity
             android:name=".ui.view.HomeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.view.TopHeadlineActivity" />
+        <activity android:name=".ui.view.home.TopHeadlineActivity" />
         <activity
             android:name=".ui.view.SplashActivity"
             android:theme="@style/AppTheme.NoActionBar">

@@ -1,4 +1,4 @@
-package com.ishaanjain.redcarpetinternship.ui.view
+package com.ishaanjain.redcarpetinternship.ui.view.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

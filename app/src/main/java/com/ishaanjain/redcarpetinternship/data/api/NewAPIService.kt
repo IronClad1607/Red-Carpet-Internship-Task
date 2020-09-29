@@ -8,9 +8,8 @@ import retrofit2.http.Query
 
 interface NewAPIService {
 
-    @GET("/top-headlines?country=in")
+    @GET("/v2/top-headlines?country=in")
     suspend fun getHeadlinesIndia(
-        @Query("page") page: Int,
         @Query("apiKey") apiKey: String
     ): Response<NewsResponse>
 

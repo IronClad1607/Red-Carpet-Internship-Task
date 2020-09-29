@@ -10,7 +10,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class NewsViewModel : ViewModel() {
+class SourcesViewModel : ViewModel() {
     var sources = MutableLiveData<List<Source>>()
 
     fun fetchSources() {

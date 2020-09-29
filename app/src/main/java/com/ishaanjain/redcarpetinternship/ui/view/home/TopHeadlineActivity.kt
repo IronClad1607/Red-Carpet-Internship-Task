@@ -1,4 +1,4 @@
-package com.ishaanjain.redcarpetinternship.ui.view
+package com.ishaanjain.redcarpetinternship.ui.view.home
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.google.android.material.tabs.TabLayout
 import com.ishaanjain.redcarpetinternship.R
 import com.ishaanjain.redcarpetinternship.ui.adapters.ViewPagerAdapter
+import com.ishaanjain.redcarpetinternship.ui.view.HomeActivity
 import kotlinx.android.synthetic.main.activity_top_headline.*
 
 class TopHeadlineActivity : AppCompatActivity() {
